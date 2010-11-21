@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Libraries">
+</Property><Property Name="Solution File" Value="D:\downloads\Assignment-4\Assignment-4\Libraries.sln">
+</Property><Property Name="User Options File" Value="D:\downloads\Assignment-4\Assignment-4\Libraries.suo">
+</Property><Property Name="Date" Value="November-16-10">
+</Property><Property Name="Time" Value="19:23 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Libraries.sln" Description="File successfully backed up as D:\downloads\Assignment-4\Assignment-4\Backup\Libraries.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Libraries.suo" Description="File successfully backed up as D:\downloads\Assignment-4\Assignment-4\Backup\Libraries.suo">
+</Event><Event ErrorLevel="0" Project="Functions" Source="Functions\Functions.csproj" Description="Project file successfully backed up as D:\downloads\Assignment-4\Assignment-4\Backup\Functions\Functions.csproj">
+</Event><Event ErrorLevel="0" Project="Functions" Source="Functions\StringBreakout.cs" Description="File successfully backed up as D:\downloads\Assignment-4\Assignment-4\Backup\Functions\StringBreakout.cs">
+</Event><Event ErrorLevel="0" Project="Functions" Source="Functions\Factorial.cs" Description="File successfully backed up as D:\downloads\Assignment-4\Assignment-4\Backup\Functions\Factorial.cs">
+</Event><Event ErrorLevel="0" Project="Functions" Source="Functions\..\ReadMe.htm" Description="File successfully backed up as D:\downloads\Assignment-4\Assignment-4\Backup\Functions\..\ReadMe.htm">
+</Event><Event ErrorLevel="1" Project="Functions" Source="Functions\Functions.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="Functions" Source="Functions\Functions.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Functions" Source="Functions\Functions.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FunctionTest" Source="FunctionTest\FunctionTest.csproj" Description="Project file successfully backed up as D:\downloads\Assignment-4\Assignment-4\Backup\FunctionTest\FunctionTest.csproj">
+</Event><Event ErrorLevel="0" Project="FunctionTest" Source="FunctionTest\FunctionTest.csproj.user" Description="Project user file successfully backed up as D:\downloads\Assignment-4\Assignment-4\Backup\FunctionTest\FunctionTest.csproj.user">
+</Event><Event ErrorLevel="0" Project="FunctionTest" Source="FunctionTest\FunctionClient.cs" Description="File successfully backed up as D:\downloads\Assignment-4\Assignment-4\Backup\FunctionTest\FunctionClient.cs">
+</Event><Event ErrorLevel="1" Project="FunctionTest" Source="FunctionTest\FunctionTest.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="FunctionTest" Source="FunctionTest\FunctionTest.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FunctionTest" Source="FunctionTest\FunctionTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Libraries.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Libraries.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Functions" Source="Functions\Functions.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FunctionTest" Source="FunctionTest\FunctionTest.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
