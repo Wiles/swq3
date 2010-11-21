@@ -17,7 +17,16 @@ namespace TestProject1
         const int mixAlphaLength = 52;
 
         /// <summary>
-        /// Ensures null string give NullReferenceException
+        /// Test Identifier:
+        ///     FedNullString
+        /// Description:
+        ///     Tests for correct handling of null input string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     null
+        /// Expected Output:
+        ///     NullReferenceException
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
@@ -27,7 +36,16 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Ensures blank string gives FormatException
+        /// Test Identifier:
+        ///     FedBlankString
+        /// Description:
+        ///     Correct Handling of blank String
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     ""
+        /// Expected Output:
+        ///     FormatException
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(FormatException))]
@@ -37,7 +55,34 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Above largest possible value
+        /// Test Identifier:
+        ///     FedEachDigit
+        /// Description:
+        ///     Tests that all 10 different digits can be extracted
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     "0123456789"
+        /// Expected Output:
+        ///     123456789
+        /// </summary>
+        [TestMethod]
+        public void FedEachDigit()
+        {
+            Assert.AreEqual(StringBreakout.FindAndExtractDigits(digits), 123456789);
+        }
+
+        /// <summary>
+        /// Test Identifier:
+        ///     FedOverflow
+        /// Description:
+        ///     A number larger then the output can handl
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     "2147483648"
+        /// Expected Output:
+        ///     OverflowException
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(OverflowException))]
@@ -47,16 +92,34 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Largest possible value
+        /// Test Identifier:
+        ///     FedUpperBound
+        /// Description:
+        ///     Largest accepted value
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     "2147483647"
+        /// Expected Output:
+        ///     2147483647
         /// </summary>
         [TestMethod]
         public void FedUpperBound()
         {
-            Assert.AreEqual(StringBreakout.FindAndExtractDigits("2147483647"), int.MaxValue);
+            Assert.AreEqual(StringBreakout.FindAndExtractDigits(int.MaxValue.ToString()), int.MaxValue);
         }
 
         /// <summary>
-        /// Check the smallest possible value
+        /// Test Identifier:
+        ///     FedLowerBount
+        /// Description:
+        ///     Smallest possible value
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     "0"
+        /// Expected Output:
+        ///     0
         /// </summary>
         [TestMethod]
         public void FedLowerBound()
@@ -64,26 +127,37 @@ namespace TestProject1
             Assert.AreEqual(StringBreakout.FindAndExtractDigits("0"), 0);
         }
 
+
+
         /// <summary>
-        /// Checks that all digits are recognized as such
+        /// Test Identifier:
+        ///     FedLeadingZeros
+        /// Description:
+        ///     Tests that a large number of leading zeros ase still ignored
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     Bunch of 0 followed by 123456789
+        /// Expected Output:
+        ///     123456789
         /// </summary>
         [TestMethod]
-        public void FedEachDigit()
+        public void FedLeadingZeros()
         {
-            Assert.AreEqual(StringBreakout.FindAndExtractDigits(digits), 123456789);
+            Assert.AreEqual(StringBreakout.FindAndExtractDigits("00000000000000000000000" + digits), 123456789);
         }
 
         /// <summary>
-        /// Checks that leading zeros are ignored
-        /// </summary>
-        [TestMethod]
-        public void FedStartingZeros()
-        {
-            Assert.AreEqual(StringBreakout.FindAndExtractDigits("0000" + digits), 123456789);
-        }
-
-        /// <summary>
-        /// Tests ability to extract numbers from a string and ignoring minus sign
+        /// Test Identifier:
+        ///     FedExtractionTest
+        /// Description:
+        ///     Normal usage taking numbers correctly out of mixed string also ensures that minus signs are ignored
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     -as12?>.34LKd56!@#$78EIDKA9
+        /// Expected Output:
+        ///     123456789
         /// </summary>
         [TestMethod]
         public void FedExtractionTest()
