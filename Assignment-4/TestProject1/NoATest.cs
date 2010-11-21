@@ -21,7 +21,16 @@ namespace TestProject1
         const int mixAlphaLength = 52;
 
         /// <summary>
-        /// Check for exception for NULL input
+        /// Test Identifier:
+        ///     NoaNullString
+        /// Description:
+        ///     Tests correct Handling of null input string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     null
+        /// Expected Output:
+        ///     NullReferenceException
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
@@ -31,7 +40,16 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Blank string to ensure value is zero
+        /// Test Identifier:
+        ///     NoaBlankString
+        /// Description:
+        ///     Correct handling of an empty string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     ""
+        /// Expected Output:
+        ///     0
         /// </summary>
         [TestMethod]
         public void NoaBlankString()
@@ -40,7 +58,16 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Single correct character extraction
+        /// Test Identifier:
+        ///     NoaSingleExtraction
+        /// Description:
+        ///     Lower boundary of finding one correct character
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     0-9A
+        /// Expected Output:
+        ///     1
         /// </summary>
         [TestMethod]
         public void NoASingleExtraction()
@@ -49,18 +76,34 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Ensures all 52 A-Z,a-z are counted
+        /// Test Identifier:
+        ///     NoaEachAlphas
+        /// Description:
+        ///     Ensures each of the 52 valid characters get counted A-Za-z
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     A-Za-z
+        /// Expected Output:
+        ///     52
         /// </summary>
         [TestMethod]
-        public void NoaEachDigits()
+        public void NoaEachAlphas()
         {
             Assert.AreEqual(StringBreakout.NumberOfAlphas(alphas), alphas.Length);
         }
 
         /// <summary>
-        /// Check that mix finds right number of alphas
-        /// If the correct number is returned than it can be assumed that no non-alpha characters were counted
-        /// Since we know that we do read all alphas from the last test
+        /// Test Identifier:
+        ///     NoaMixCheck
+        /// Description:
+        ///     Normal use highly mixed string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     mix
+        /// Expected Output:
+        ///     pre calculated number of alphas in mix
         /// </summary>
         [TestMethod]
         public void NoaMixCheck()

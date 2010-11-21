@@ -21,7 +21,16 @@ namespace TestProject1
         const int mixAlphaLength = 52;
 
         /// <summary>
-        /// Check for exception for NULL input
+        /// Test Identifier:
+        ///     NooNullString
+        /// Description:
+        ///     Tests for a null exception
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     null string
+        /// Expected Output:
+        ///     NullReferenceException
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
@@ -31,7 +40,16 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Blank string to ensure value is zero
+        /// Test Identifier:
+        ///     NooBlankString
+        /// Description:
+        ///     Tests for correct handling of blank string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     Empty Sting
+        /// Expected Output:
+        ///     0
         /// </summary>
         [TestMethod]
         public void NooBlankString()
@@ -40,7 +58,16 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Single correct character extraction
+        /// Test Identifier:
+        ///     NooSingleExtraction
+        /// Description:
+        ///     Tests ability to find a single other in a string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     Alphas characters plus questionmark
+        /// Expected Output:
+        ///     1
         /// </summary>
         [TestMethod]
         public void NooSingleExtraction()
@@ -50,7 +77,16 @@ namespace TestProject1
 
 
         /// <summary>
-        /// Ensures all alphas and digits are ignored
+        /// Test Identifier:
+        ///     NooDigitatAlphas
+        /// Description:
+        ///     Extraction test of a highly mixed string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     mixed string
+        /// Expected Output:
+        ///     Correct number of others. Determined at run time
         /// </summary>
         [TestMethod]
         public void NooDigitAlphas()

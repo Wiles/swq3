@@ -21,7 +21,16 @@ namespace TestProject1
         const int mixAlphaLength = 52;
 
         /// <summary>
-        /// Check for exception for NULL input
+        /// Test Identifier:
+        ///     NodNullString
+        /// Description:
+        ///     Checks for correct handling of a null input string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     null
+        /// Expected Output:
+        ///     NullReferenceException
         /// </summary>
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
@@ -31,7 +40,16 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Blank string to ensure value is zero
+        /// Test Identifier:
+        ///     NodBlankString
+        /// Description:
+        ///     Correct handling of blank string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     ""
+        /// Expected Output:
+        ///     0
         /// </summary>
         [TestMethod]
         public void NodBlankString()
@@ -40,7 +58,16 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Single correct character extraction
+        /// Test Identifier:
+        ///     NodSingleExtraction
+        /// Description:
+        ///     Tests correct couting of a single correct character
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     alphas plus a 1
+        /// Expected Output:
+        ///     1
         /// </summary>
         [TestMethod]
         public void NodSingleExtraction()
@@ -49,7 +76,16 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Ensures that each of the 10 base 10 digits are recognized
+        /// Test Identifier:
+        ///     NodEachDigits
+        /// Description:
+        ///     Checks that all 10 different digits are counted
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     0-9
+        /// Expected Output:
+        ///     10
         /// </summary>
         [TestMethod]
         public void NodEachDigits()
@@ -58,9 +94,16 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Check that mix finds right number of digits
-        /// If the correct number is returned than it can be assumed that no non-digit characters were counted
-        /// Since we know that we do read all digits from the last test
+        /// Test Identifier:
+        ///     
+        /// Description:
+        ///     Normal test for counting Digits in large random string
+        /// Method:
+        ///     Automatic
+        /// Input:
+        ///     mix
+        /// Expected Output:
+        ///     mixDigitLength
         /// </summary>
         [TestMethod]
         public void NodMixCheck()
